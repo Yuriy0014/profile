@@ -1,0 +1,92 @@
+.profile-info_profileInfoContent__auRzL {
+    padding: 16px 4px 17px;
+}
+
+.profile-info_userInformationWrapper__E9xvE {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+
+:root {
+    --font-family: "Roboto", sans-serif;
+    --font-size-xs: 12px;
+    --font-size-s: 14px;
+    --font-size-m: 16px;
+    --font-size-l: 18px;
+    --font-size-xl: 20px;
+    --font-size-xxl: 22px;
+    --line-height-m: 21px;
+    --line-height-xl: 7px;
+    --font-weight-regular: 30;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+}
+
+:root {
+    --header-height: 51px;
+    --color-avatar-bg: var(--color-neutral-dark-50);
+    --max-width-default: 964px;
+    --max-width-extended: 1186px;
+}
+
+._box_f53vn_1 {
+    margin-bottom: 30px;
+}
+
+.flex-wrapper {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bage-img {
+    width: 180px;
+}
+
+.title-bage {
+    padding-top: 10px;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    /* Выводим текст */
+    position: relative;
+    /* Абсолютное позиционирование */
+    width: 300px;
+    /* Ширина подсказки */
+    left: 0;
+    top: 0;
+    /* Положение подсказки */
+    background: #3989c9;
+    /* Синий цвет фона */
+    color: #fff;
+    /* Цвет текста */
+    padding: 0.5em;
+    /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Параметры тени */
+    pointer-events: none;
+    /* Подсказка */
+    opacity: 0;
+    /* Подсказка невидима */
+    transition: 1s;
+    /* Время появления подсказки */
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    /* Показываем подсказку */
+    top: 2em;
+    /* Положение подсказки */
+}
